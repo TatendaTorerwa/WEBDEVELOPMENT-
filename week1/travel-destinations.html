@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Travel Destination</title>
+<style>
+  /* Table styling */
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+
+  th, td {
+    border: 2px solid #4CAF50; /* greenish border */
+    padding: 12px 15px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+
+  /* Alternating row colors */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #e6ffe6;
+  }
+
+  /* Image hover effect */
+  table img {
+    transition: opacity 0.3s ease;
+    display: block;
+    max-width: 100%;
+  }
+
+  table img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  /* Center the main heading */
+  h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<h1>Travel Destination</h1>
+
+<table>
+  <tr>
+    <th>Destination</th>
+    <th>Attraction</th>
+  </tr>
+
+  <tr>
+    <td>Paris</td>
+    <td><a href="#paris-info"><img src="images/eiffeltower.jpg" alt="Eiffel Tower" width="100"></a></td>
+  </tr>
+
+  <tr>
+    <td>Rome</td>
+    <td><a href="#rome-info"><img src="images/colosseum.jpg" alt="Colosseum" width="100"></a></td>
+  </tr>
+
+  <tr>
+    <td>New York</td>
+    <td><a href="#nyc-info"><img src="images/statueliberty.jpg" alt="Statue of Liberty" width="100"></a></td>
+  </tr>
+</table>
+
+<!-- Info Sections at Bottom -->
+<hr>
+<h2 id="paris-info">Eiffel Tower - Paris</h2>
+<p>The Eiffel Tower is one of the most iconic landmarks in the world located in Paris, France.</p>
+
+<h2 id="rome-info">Colosseum - Rome</h2>
+<p>The Colosseum is an ancient Roman amphitheater in the center of Rome, Italy.</p>
+
+<h2 id="nyc-info">Statue of Liberty - New York</h2>
+<p>The Statue of Liberty is a symbol of freedom and democracy, located in New York Harbor, USA.</p>
+
+</body>
+</html>
