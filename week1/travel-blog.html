@@ -3,8 +3,7 @@
 <head>
 <title>Travel Blog</title>
 <style>
-
-/* Style the navigation numbers as circles */
+/* Style the navigation numbers as circles (1, 2, 3, 4) */
 
 /* Make the ordered list horizontal */
 ol.buttons {
@@ -15,223 +14,243 @@ ol.buttons {
   margin: 0;             /* Remove default margin */
 }
 
-/* Style each link as a circle */
+/* Style each link as a colored circle */
 ol > li > a {
   display: inline-block;
   width: 40px;
   height: 40px;
   line-height: 40px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 50%;       /* Make it circular */
   font-weight: bold;
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-/* Background colors for each circle */
+/* Unique background color for each circle */
 ol > li:nth-child(1) a {
   background-color: tomato;
 }
-
 ol > li:nth-child(2) a {
   background-color: steelblue;
 }
-
 ol > li:nth-child(3) a {
   background-color: mediumseagreen;
 }
-
 ol > li:nth-child(4) a {
   background-color: orange;
 }
 
-/* Hover effect */
+/* Hover effect for the circular buttons */
 ol > li > a:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   opacity: 0.9;
 }
 
-/* Region Headings */
+/* Styling for each region heading */
 #euro {
-    color: darkblue;
+  color: darkblue;
 }
 #asia {
-    color: darkred;
+  color: darkred;
 }
 #mericana {
-    color: darkorange;
+  color: darkorange;
 }
 #africa {
-    color: darkgreen;
+  color: darkgreen;
 }
 
-/* Country Headings */
+/* Color styling for country names */
 .french .country {
-    color: blue;
+  color: blue;
 }
 .italian .country {
-    color: green;
+  color: green;
 }
 .greek .country {
-    color: goldenrod;
+  color: goldenrod;
 }
 .japanese .country {
-    color: black;
+  color: black;
 }
 .chinese .country {
-    color: brown;
+  color: brown;
 }
 .hindi .country {
-    color: red;
+  color: red;
 }
 .english .country,
 .english-speaking .country {
-    color: grey;
+  color: grey;
 }
 .portuguese .country {
-    color: orange;
+  color: orange;
 }
 .zulu .country {
-    color: purple;
+  color: purple;
 }
 .arabic .country {
-    color: navy;
+  color: navy;
 }
 .amazigh .country {
-    color: pink;
+  color: pink;
 }
 
-/* City Names */
+/* City names styling */
 .city {
-    color: #444;
+  color: #444;
 }
 </style>
 </head>
 <body>
+
+<!-- Page Heading -->
 <h1>Travel Blog</h1>
 
+<!-- Navigation Buttons for Each Region -->
 <ol class="buttons">
-<li><a href="#euro">1</a></li>
-<li><a href="#asia">2</a></li>
-<li><a href="#mericana">3</a></li>
-<li><a href="#africa">4</a></li>
+  <li><a href="#euro">1</a></li>
+  <li><a href="#asia">2</a></li>
+  <li><a href="#mericana">3</a></li>
+  <li><a href="#africa">4</a></li>
 </ol>
 
+<!-- ====================== -->
 <!-- Section 1: Europe -->
+<!-- ====================== -->
 <h2 id="euro">Destination 1: Europe</h2>
 <ol>
-<li class="french"><span class="country">France</span>
-  <ul>
-    <li><span class="city">Paris</span></li>
-    <li><span class="city">Nice</span></li>
-    <li><span class="city">Marseille</span></li>
-  </ul>
-</li>
+  <!-- France and cities -->
+  <li class="french"><span class="country">France</span>
+    <ul>
+      <li><span class="city">Paris</span></li>
+      <li><span class="city">Nice</span></li>
+      <li><span class="city">Marseille</span></li>
+    </ul>
+  </li>
 
-<li class="italian"><span class="country">Italy</span>
-  <ul>
-    <li><span class="city">Rome</span></li>
-    <li><span class="city">Florence</span></li>
-    <li><span class="city">Venice</span></li>
-  </ul>
-</li>
+  <!-- Italy and cities -->
+  <li class="italian"><span class="country">Italy</span>
+    <ul>
+      <li><span class="city">Rome</span></li>
+      <li><span class="city">Florence</span></li>
+      <li><span class="city">Venice</span></li>
+    </ul>
+  </li>
 
-<li class="greek"><span class="country">Greece</span>
-  <ul>
-    <li><span class="city">Athens</span></li>
-    <li><span class="city">Thessaloniki</span></li>
-    <li><span class="city">Santorini</span></li>
-  </ul>
-</li>
+  <!-- Greece and cities -->
+  <li class="greek"><span class="country">Greece</span>
+    <ul>
+      <li><span class="city">Athens</span></li>
+      <li><span class="city">Thessaloniki</span></li>
+      <li><span class="city">Santorini</span></li>
+    </ul>
+  </li>
 </ol>
 <hr>
 
+<!-- ====================== -->
 <!-- Section 2: Asia -->
+<!-- ====================== -->
 <h2 id="asia">Destination 2: Asia</h2>
 <ol>
-<li class="japanese"><span class="country">Japan</span>
-  <ul>
-    <li><span class="city">Tokyo</span></li>
-    <li><span class="city">Kyoto</span></li>
-    <li><span class="city">Osaka</span></li>
-  </ul>
-</li>
+  <!-- Japan and cities -->
+  <li class="japanese"><span class="country">Japan</span>
+    <ul>
+      <li><span class="city">Tokyo</span></li>
+      <li><span class="city">Kyoto</span></li>
+      <li><span class="city">Osaka</span></li>
+    </ul>
+  </li>
 
-<li class="chinese"><span class="country">China</span>
-  <ul>
-    <li><span class="city">Beijing</span></li>
-    <li><span class="city">Shanghai</span></li>
-    <li><span class="city">Xi'an</span></li>
-  </ul>
-</li>
+  <!-- China and cities -->
+  <li class="chinese"><span class="country">China</span>
+    <ul>
+      <li><span class="city">Beijing</span></li>
+      <li><span class="city">Shanghai</span></li>
+      <li><span class="city">Xi'an</span></li>
+    </ul>
+  </li>
 
-<li class="hindi"><span class="country">India</span>
-  <ul>
-    <li><span class="city">New Delhi</span></li>
-    <li><span class="city">Mumbai</span></li>
-    <li><span class="city">Jaipur</span></li>
-  </ul>
-</li>
+  <!-- India and cities -->
+  <li class="hindi"><span class="country">India</span>
+    <ul>
+      <li><span class="city">New Delhi</span></li>
+      <li><span class="city">Mumbai</span></li>
+      <li><span class="city">Jaipur</span></li>
+    </ul>
+  </li>
 </ol>
 <hr>
 
+<!-- ====================== -->
 <!-- Section 3: America -->
+<!-- ====================== -->
 <h2 id="mericana">Destination 3: America</h2>
 <ol>
-<li class="english"><span class="country">USA</span>
-  <ul>
-    <li><span class="city">New York City</span></li>
-    <li><span class="city">Los Angeles</span></li>
-    <li><span class="city">Chicago</span></li>
-  </ul>
-</li>
+  <!-- USA and cities -->
+  <li class="english"><span class="country">USA</span>
+    <ul>
+      <li><span class="city">New York City</span></li>
+      <li><span class="city">Los Angeles</span></li>
+      <li><span class="city">Chicago</span></li>
+    </ul>
+  </li>
 
-<li class="portuguese"><span class="country">Brazil</span>
-  <ul>
-    <li><span class="city">Rio de Janeiro</span></li>
-    <li><span class="city">São Paulo</span></li>
-    <li><span class="city">Salvador</span></li>
-  </ul>
-</li>
+  <!-- Brazil and cities -->
+  <li class="portuguese"><span class="country">Brazil</span>
+    <ul>
+      <li><span class="city">Rio de Janeiro</span></li>
+      <li><span class="city">São Paulo</span></li>
+      <li><span class="city">Salvador</span></li>
+    </ul>
+  </li>
 
-<li class="english-speaking"><span class="country">Canada</span>
-  <ul>
-    <li><span class="city">Toronto</span></li>
-    <li><span class="city">Vancouver</span></li>
-    <li><span class="city">Montreal</span></li>
-  </ul>
-</li>
+  <!-- Canada and cities -->
+  <li class="english-speaking"><span class="country">Canada</span>
+    <ul>
+      <li><span class="city">Toronto</span></li>
+      <li><span class="city">Vancouver</span></li>
+      <li><span class="city">Montreal</span></li>
+    </ul>
+  </li>
 </ol>
 <hr>
 
+<!-- ====================== -->
 <!-- Section 4: Africa -->
+<!-- ====================== -->
 <h2 id="africa">Destination 4: Africa</h2>
 <ol>
-<li class="zulu"><span class="country">South Africa</span>
-  <ul>
-    <li><span class="city">Cape Town</span></li>
-    <li><span class="city">Johannesburg</span></li>
-    <li><span class="city">Durban</span></li>
-  </ul>
-</li>
+  <!-- South Africa and cities -->
+  <li class="zulu"><span class="country">South Africa</span>
+    <ul>
+      <li><span class="city">Cape Town</span></li>
+      <li><span class="city">Johannesburg</span></li>
+      <li><span class="city">Durban</span></li>
+    </ul>
+  </li>
 
-<li class="arabic"><span class="country">Egypt</span>
-  <ul>
-    <li><span class="city">Cairo</span></li>
-    <li><span class="city">Luxor</span></li>
-    <li><span class="city">Sharm El Sheikh</span></li>
-  </ul>
-</li>
+  <!-- Egypt and cities -->
+  <li class="arabic"><span class="country">Egypt</span>
+    <ul>
+      <li><span class="city">Cairo</span></li>
+      <li><span class="city">Luxor</span></li>
+      <li><span class="city">Sharm El Sheikh</span></li>
+    </ul>
+  </li>
 
-<li class="amazigh"><span class="country">Morocco</span>
-  <ul>
-    <li><span class="city">Marrakech</span></li>
-    <li><span class="city">Casablanca</span></li>
-    <li><span class="city">Fez</span></li>
-  </ul>
-</li>
+  <!-- Morocco and cities -->
+  <li class="amazigh"><span class="country">Morocco</span>
+    <ul>
+      <li><span class="city">Marrakech</span></li>
+      <li><span class="city">Casablanca</span></li>
+      <li><span class="city">Fez</span></li>
+    </ul>
+  </li>
 </ol>
 
 <hr>
